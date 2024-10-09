@@ -246,10 +246,7 @@ async def help(client, message):
                     InlineKeyboardButton("Other Bots", url="https://t.me/HyetelegramBots/54"),
                     InlineKeyboardButton("About Me", callback_data="about_data")
                 ],
-                [
-                    InlineKeyboardButton("BOT Channel", url="https://t.me/HyetelegramBots"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/HyetelegramBots")
-                ]
+                
             ]
         ),
         reply_to_message_id=message.message_id
@@ -263,10 +260,6 @@ async def about(client, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton(
-                        "Ajak Bot", url="https://t.me/Ajak_TG_Bot")
-                ],
                 [
                     InlineKeyboardButton("BACK", callback_data="help_data"),
                     InlineKeyboardButton("CLOSE", callback_data="close_data"),
