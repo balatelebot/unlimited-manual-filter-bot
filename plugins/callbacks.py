@@ -49,12 +49,7 @@ async def cb_handler(client, query):
                 [
                     InlineKeyboardButton("How to Deploy?", url="https://youtu.be/hkmc3e7U7R4"),
                     InlineKeyboardButton("About Me", callback_data="about_data")
-                ],
-                [
-                    InlineKeyboardButton("BOT Update Channel", url="https://t.me/HyetelegramBots"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/Hyetelgram_bots_group")
                 ]
-            ]
         )
 
         await query.message.edit_text(
@@ -68,10 +63,6 @@ async def cb_handler(client, query):
         await query.answer()
         keyboard = InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton(
-                        "SOURCE CODE", url="https://github.com/TroJanzHEX/Unlimited-Filter-Bot")
-                ],
                 [
                     InlineKeyboardButton("BACK", callback_data="help_data"),
                     InlineKeyboardButton("CLOSE", callback_data="close_data"),
